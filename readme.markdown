@@ -1,6 +1,13 @@
 ### bathRoom
 a Ruby wrapper around [TOIlet](http://caca.zoy.org/wiki/toilet)
 
+Implements most of TOIlets options and has added support for listing all
+supported fonts, formats and filters.
+Also supports showing formatted sample text in every installed font
+available.
+Finally, it allows for interactive deleting of each installed font.
+
+## Usage Examples:
 ```
 $ bathroom.rb --usage
 A couple of usage examples:
