@@ -25,7 +25,7 @@ class Toilets
   end
 
   def supported_output_format_pairs
-    `toilet -E list`.split("\n").map{|line|md = line.match(/\"(.+)\": (.+)/); md ? [md[1],md[2]] : nil}.compact
+    `#{TOILET_PATH} -E list`.split("\n").map{|line|md = line.match(/\"(.+)\": (.+)/); md ? [md[1],md[2]] : nil}.compact
   end
 
   def supported_output_formats 
@@ -33,7 +33,7 @@ class Toilets
   end
 
   def supported_filter_pairs
-    `toilet -F list`.split("\n").map{|line|md = line.match(/\"(.+)\": (.+)/); md ? [md[1],md[2]] : nil}.compact
+    `#{TOILET_PATH} -F list`.split("\n").map{|line|md = line.match(/\"(.+)\": (.+)/); md ? [md[1],md[2]] : nil}.compact
   end
 
   def supported_filters
