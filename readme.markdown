@@ -7,6 +7,10 @@ Also supports showing formatted sample text in every installed font
 available.
 Finally, it allows for interactive deleting of each installed font.
 
+## Discontinuation Notice
+
+This project is no longer maintained and will be archived.
+
 ## Usage Examples:
 ```
 $ bathroom.rb --usage
